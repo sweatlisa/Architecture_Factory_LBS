@@ -18,6 +18,7 @@
 		92A1A2FE1F20A3A000C1C335 /* Architecture_Factory_LBSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A1A2FD1F20A3A000C1C335 /* Architecture_Factory_LBSTests.m */; };
 		92A1A3091F20A3A000C1C335 /* Architecture_Factory_LBSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A1A3081F20A3A000C1C335 /* Architecture_Factory_LBSUITests.m */; };
 		92A1A31F1F248F4400C1C335 /* BaiduMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A1A31E1F248F4400C1C335 /* BaiduMapView.m */; };
+		92A1A3241F263D5B00C1C335 /* GaodeMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A1A3231F263D5B00C1C335 /* GaodeMapView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		92A1A31A1F248DD800C1C335 /* IMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMapView.h; path = BaseMap/Views/IMapView.h; sourceTree = "<group>"; };
 		92A1A31D1F248F4400C1C335 /* BaiduMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaiduMapView.h; path = BaiduMap/Views/BaiduMapView.h; sourceTree = "<group>"; };
 		92A1A31E1F248F4400C1C335 /* BaiduMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaiduMapView.m; path = BaiduMap/Views/BaiduMapView.m; sourceTree = "<group>"; };
+		92A1A3221F263D5B00C1C335 /* GaodeMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GaodeMapView.h; path = GaodeMap/Views/GaodeMapView.h; sourceTree = "<group>"; };
+		92A1A3231F263D5B00C1C335 /* GaodeMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GaodeMapView.m; path = GaodeMap/Views/GaodeMapView.m; sourceTree = "<group>"; };
 		E520877498D287574582464F /* Pods-Architecture_Factory_LBS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Architecture_Factory_LBS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Architecture_Factory_LBS/Pods-Architecture_Factory_LBS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +126,7 @@
 		92A1A2DF1F20A3A000C1C335 /* Architecture_Factory_LBS */ = {
 			isa = PBXGroup;
 			children = (
+				92A1A3201F263CE800C1C335 /* GaodeMap */,
 				92A1A31B1F248EED00C1C335 /* BaiduMap */,
 				92A1A3181F248D4B00C1C335 /* BaseMap */,
 				92A1A2E31F20A3A000C1C335 /* AppDelegate.h */,
@@ -194,6 +198,23 @@
 			children = (
 				92A1A31D1F248F4400C1C335 /* BaiduMapView.h */,
 				92A1A31E1F248F4400C1C335 /* BaiduMapView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		92A1A3201F263CE800C1C335 /* GaodeMap */ = {
+			isa = PBXGroup;
+			children = (
+				92A1A3211F263D1900C1C335 /* Views */,
+			);
+			name = GaodeMap;
+			sourceTree = "<group>";
+		};
+		92A1A3211F263D1900C1C335 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92A1A3221F263D5B00C1C335 /* GaodeMapView.h */,
+				92A1A3231F263D5B00C1C335 /* GaodeMapView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -397,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A1A3241F263D5B00C1C335 /* GaodeMapView.m in Sources */,
 				92A1A2E81F20A3A000C1C335 /* ViewController.m in Sources */,
 				92A1A31F1F248F4400C1C335 /* BaiduMapView.m in Sources */,
 				92A1A2E51F20A3A000C1C335 /* AppDelegate.m in Sources */,
