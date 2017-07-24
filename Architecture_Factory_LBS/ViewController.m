@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+//#import <BaiduMapAPI_Map/BMKMapView.h
+
+#import "BaiduMapView.h"
+
 
 @interface ViewController ()
+//@property (nonatomic, strong)BMKMapView *mapView;
 
 @end
 
@@ -16,7 +21,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //通常的写法
+//    _mapView = [[BMKMapView alloc]initWithFrame:self.view.frame];
+//    [self.view addSubview: _mapView];
+    
+// 工厂模式   第一步：代码结构的优化
+    id<IMapView> mapView = [[BaiduMapView alloc]initWithFrame:self.view.frame];
+    [self.view addSubview:[mapView getView]];
 }
 
 
@@ -24,6 +36,4 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 @end

@@ -1,0 +1,9 @@
+platform :ios,'8.0'
+#use_frameworks!
+target 'Architecture_Factory_LBS' do
+    pod 'BaiduMapKit', '~>3.3.2 ' #百度地图 sdk
+
+    pod 'AMap3DMap' #高德地图3D地图sdk
+    pod 'AMapSearch' #地图sdk搜索功能
+    pod 'AMapLocation' #定位sdk
+end

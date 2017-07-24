@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AF42F3858F101FEF5EB75CD /* libPods-Architecture_Factory_LBS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E6214EC59C8203F9AE5926 /* libPods-Architecture_Factory_LBS.a */; };
 		92A1A2E21F20A3A000C1C335 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A1A2E11F20A3A000C1C335 /* main.m */; };
 		92A1A2E51F20A3A000C1C335 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A1A2E41F20A3A000C1C335 /* AppDelegate.m */; };
 		92A1A2E81F20A3A000C1C335 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A1A2E71F20A3A000C1C335 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 		92A1A2F31F20A3A000C1C335 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A1A2F11F20A3A000C1C335 /* LaunchScreen.storyboard */; };
 		92A1A2FE1F20A3A000C1C335 /* Architecture_Factory_LBSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A1A2FD1F20A3A000C1C335 /* Architecture_Factory_LBSTests.m */; };
 		92A1A3091F20A3A000C1C335 /* Architecture_Factory_LBSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A1A3081F20A3A000C1C335 /* Architecture_Factory_LBSUITests.m */; };
+		92A1A31F1F248F4400C1C335 /* BaiduMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A1A31E1F248F4400C1C335 /* BaiduMapView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11E6214EC59C8203F9AE5926 /* libPods-Architecture_Factory_LBS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Architecture_Factory_LBS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F480B77777A42C7C8E9252 /* Pods-Architecture_Factory_LBS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Architecture_Factory_LBS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Architecture_Factory_LBS/Pods-Architecture_Factory_LBS.release.xcconfig"; sourceTree = "<group>"; };
 		92A1A2DD1F20A3A000C1C335 /* Architecture_Factory_LBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Architecture_Factory_LBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A1A2E11F20A3A000C1C335 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92A1A2E31F20A3A000C1C335 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +57,10 @@
 		92A1A3041F20A3A000C1C335 /* Architecture_Factory_LBSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Architecture_Factory_LBSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A1A3081F20A3A000C1C335 /* Architecture_Factory_LBSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Architecture_Factory_LBSUITests.m; sourceTree = "<group>"; };
 		92A1A30A1F20A3A000C1C335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92A1A31A1F248DD800C1C335 /* IMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMapView.h; path = BaseMap/Views/IMapView.h; sourceTree = "<group>"; };
+		92A1A31D1F248F4400C1C335 /* BaiduMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaiduMapView.h; path = BaiduMap/Views/BaiduMapView.h; sourceTree = "<group>"; };
+		92A1A31E1F248F4400C1C335 /* BaiduMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaiduMapView.m; path = BaiduMap/Views/BaiduMapView.m; sourceTree = "<group>"; };
+		E520877498D287574582464F /* Pods-Architecture_Factory_LBS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Architecture_Factory_LBS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Architecture_Factory_LBS/Pods-Architecture_Factory_LBS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF42F3858F101FEF5EB75CD /* libPods-Architecture_Factory_LBS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CB81EB0D328D2B5364423FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E520877498D287574582464F /* Pods-Architecture_Factory_LBS.debug.xcconfig */,
+				30F480B77777A42C7C8E9252 /* Pods-Architecture_Factory_LBS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		92A1A2D41F20A3A000C1C335 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +105,8 @@
 				92A1A2FC1F20A3A000C1C335 /* Architecture_Factory_LBSTests */,
 				92A1A3071F20A3A000C1C335 /* Architecture_Factory_LBSUITests */,
 				92A1A2DE1F20A3A000C1C335 /* Products */,
+				5CB81EB0D328D2B5364423FA /* Pods */,
+				B12ACD8DF16F0020E0514C21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +123,8 @@
 		92A1A2DF1F20A3A000C1C335 /* Architecture_Factory_LBS */ = {
 			isa = PBXGroup;
 			children = (
+				92A1A31B1F248EED00C1C335 /* BaiduMap */,
+				92A1A3181F248D4B00C1C335 /* BaseMap */,
 				92A1A2E31F20A3A000C1C335 /* AppDelegate.h */,
 				92A1A2E41F20A3A000C1C335 /* AppDelegate.m */,
 				92A1A2E61F20A3A000C1C335 /* ViewController.h */,
@@ -143,6 +165,47 @@
 			path = Architecture_Factory_LBSUITests;
 			sourceTree = "<group>";
 		};
+		92A1A3181F248D4B00C1C335 /* BaseMap */ = {
+			isa = PBXGroup;
+			children = (
+				92A1A3191F248D5900C1C335 /* Views */,
+			);
+			name = BaseMap;
+			sourceTree = "<group>";
+		};
+		92A1A3191F248D5900C1C335 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92A1A31A1F248DD800C1C335 /* IMapView.h */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		92A1A31B1F248EED00C1C335 /* BaiduMap */ = {
+			isa = PBXGroup;
+			children = (
+				92A1A31C1F248F0200C1C335 /* Views */,
+			);
+			name = BaiduMap;
+			sourceTree = "<group>";
+		};
+		92A1A31C1F248F0200C1C335 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92A1A31D1F248F4400C1C335 /* BaiduMapView.h */,
+				92A1A31E1F248F4400C1C335 /* BaiduMapView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B12ACD8DF16F0020E0514C21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11E6214EC59C8203F9AE5926 /* libPods-Architecture_Factory_LBS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92A1A30D1F20A3A000C1C335 /* Build configuration list for PBXNativeTarget "Architecture_Factory_LBS" */;
 			buildPhases = (
+				1286E6FD3ED1299064F84459 /* [CP] Check Pods Manifest.lock */,
 				92A1A2D91F20A3A000C1C335 /* Sources */,
 				92A1A2DA1F20A3A000C1C335 /* Frameworks */,
 				92A1A2DB1F20A3A000C1C335 /* Resources */,
+				35488CB6C2EFD2F29F2D828A /* [CP] Embed Pods Frameworks */,
+				F74624560A7CEF4AC4BFC3A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,12 +337,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1286E6FD3ED1299064F84459 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Architecture_Factory_LBS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35488CB6C2EFD2F29F2D828A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Architecture_Factory_LBS/Pods-Architecture_Factory_LBS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F74624560A7CEF4AC4BFC3A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Architecture_Factory_LBS/Pods-Architecture_Factory_LBS-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Architecture_Factory_LBS/Pods-Architecture_Factory_LBS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92A1A2D91F20A3A000C1C335 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				92A1A2E81F20A3A000C1C335 /* ViewController.m in Sources */,
+				92A1A31F1F248F4400C1C335 /* BaiduMapView.m in Sources */,
 				92A1A2E51F20A3A000C1C335 /* AppDelegate.m in Sources */,
 				92A1A2E21F20A3A000C1C335 /* main.m in Sources */,
 				92A1A2EE1F20A3A000C1C335 /* Architecture_Factory_LBS.xcdatamodeld in Sources */,
@@ -428,6 +549,7 @@
 		};
 		92A1A30E1F20A3A000C1C335 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E520877498D287574582464F /* Pods-Architecture_Factory_LBS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Architecture_Factory_LBS/Info.plist;
@@ -439,6 +561,7 @@
 		};
 		92A1A30F1F20A3A000C1C335 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30F480B77777A42C7C8E9252 /* Pods-Architecture_Factory_LBS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Architecture_Factory_LBS/Info.plist;
@@ -513,6 +636,7 @@
 				92A1A30F1F20A3A000C1C335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92A1A3101F20A3A000C1C335 /* Build configuration list for PBXNativeTarget "Architecture_Factory_LBSTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +645,7 @@
 				92A1A3121F20A3A000C1C335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92A1A3131F20A3A000C1C335 /* Build configuration list for PBXNativeTarget "Architecture_Factory_LBSUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +654,7 @@
 				92A1A3151F20A3A000C1C335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
